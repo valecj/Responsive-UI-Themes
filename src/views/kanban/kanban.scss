@@ -232,9 +232,13 @@ $light-bg: #f2f5fe;
               
               &:nth-child(1), &:nth-child(3) {
                 color: rgb(160, 160, 160);
+                &:hover {
+                  color: rgb(116, 116, 116);
+                }
               }
               &:nth-child(5) {
                 color: rgb(34, 34, 34);
+                pointer-events: none;
               }
             }
 

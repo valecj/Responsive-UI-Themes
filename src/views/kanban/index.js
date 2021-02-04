@@ -79,7 +79,7 @@ const KanbanBoard = () => {
           <header>
             <div className="left">
               <div className="breadcrumb">
-                <a href="">Project</a> <ArrowLeftIcon /> <a href="">Task</a> <ArrowLeftIcon /> <a href=""><strong>Pixian Design Studio</strong></a>
+                <a href="#">Project</a> <ArrowLeftIcon /> <a href="#">Task</a> <ArrowLeftIcon /> <a href="#"><strong>Pixian Design Studio</strong></a>
               </div>
             </div>
 
