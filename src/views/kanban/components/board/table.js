@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import fakeData from './fakeData.json';
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
-import styles from '../../kanban.scss';
-import { MoreIcon, ClockIcon, MessageIcon, ChatIcon, AttachedIcon } from '../../../../assets/icons/index.js';
+import '../../kanban.scss';
+import { MoreIcon, ClockIcon, ChatIcon, AttachedIcon } from '../../../../assets/icons/index.js';
 
 const users = [
   'https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
@@ -193,7 +193,7 @@ function Board() {
                                 </div>
                               </div>
 
-                              <div className={styles[item.content.level]} title="Level">
+                              <div className={item.content.level} title="Level">
                                 {item.content.level}
                               </div>
 

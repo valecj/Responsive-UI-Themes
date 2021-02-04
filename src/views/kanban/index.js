@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './kanban.scss';
+import './kanban.scss';
 import { SearchIcon, NotificationIcon, ArrowLeftIcon, DashboardIcon, ChatIcon, PieIcon, CalendarIcon, AddFileIcon, BarIcon, CopyPasteIcon, MoreIcon } from '../../assets/icons';
 import Board from './components/board/table';
 
