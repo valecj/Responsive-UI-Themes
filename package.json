@@ -1,7 +1,7 @@
 {
   "name": "create-react-app",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://github.com/valecj/Responsive-UI-Themes",
   "devDependencies": {
     "css-loader": "^1.0.0",
