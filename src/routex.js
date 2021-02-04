@@ -1,6 +1,5 @@
 import React from 'react'
 import App from './App';
-import Ecommerce from './views/ecommerce'
 import Home from './views/home'
 
 import { BrowserRouter as Router , Route } from 'react-router-dom';
@@ -11,7 +10,6 @@ const Routes = () => (
   <Router>
     <App>
       <Route exact path="/" component={Home} />
-      <Route path="/ecommerce" component={Ecommerce} />
       <Route path="/kanban" component={KanbanBoard} />
     </App>
   </Router>
