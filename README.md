@@ -8,6 +8,7 @@
 
 <img src="https://i.imgur.com/z48T9Uj.png" width="40%" />
 
+<br />
 
 <p align="left">
   <a href="https://create-react-app.valecj.vercel.app/kanban" target="_blank">
