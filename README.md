@@ -11,7 +11,7 @@
 <br />
 
 <p align="left">
-  <a href="https://create-react-app.valecj.vercel.app/kanban" target="_blank">
+  <a href="https://create-react-app.valecj.vercel.app/customer" target="_blank">
     <strong>
       Customer Management Dashbaord
     </strong>
