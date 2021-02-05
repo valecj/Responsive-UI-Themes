@@ -100,25 +100,7 @@ function Board() {
   }
 
   return (
-    <div className="table">
-      {console.log(state)}
-      {/*<button
-        type="button"
-        onClick={() => {
-          setState([...state, []]);
-        }}
-      >
-        Add new group
-      </button>
-      <button
-        type="button"
-        onClick={() => {
-          setState([...state, getItems(1)]);
-        }}
-      >
-        Add new item
-      </button>*/}
-     
+    <div className="table">   
      <div style={{ display: "inline-flex" }}>
         <DragDropContext onDragEnd={onDragEnd}>
           {state.map((el, ind) => (
