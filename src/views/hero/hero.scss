@@ -1,0 +1,105 @@
+$primary: #0057ff;
+$secondary: #7747ff;
+$bg: #080A2F;
+
+.hero {
+  background: $bg;
+  min-height: 100vh;
+  position: relative;
+  color: #fff;
+
+  header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  main {
+    display: flex;
+
+    .hero__info, .hero__image {
+      min-height: 100vh;
+    }
+
+    .hero__info {
+      width: 45%;
+      position: absolute;
+      border-top-right-radius: 2em;
+      border-bottom-right-radius: 2em;
+      background-image: linear-gradient(172deg, $primary, $secondary);
+
+      h1 {
+        max-width: 400px;
+        font-size: 2em;
+      }
+    }
+
+    .hero__image {
+      background: $bg;
+      margin-left: auto;
+      width: 55%;
+      
+
+      &-content {
+        position: relative;
+        top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+
+        img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        img:first-child {
+          width: 30vw;
+          height: 30vw;
+          object-fit: cover;
+          border-radius: 100%;
+          z-index: 9;
+        }
+        img:last-child {
+          width: 32vw;
+          height: 32vw;
+          -webkit-transform-origin: 50% 50%;
+          -moz-transform-origin: 50% 50%;
+          -o-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+          -webkit-animation: 5s shape-animation infinite linear;
+          -moz-animation: 5s shape-animation infinite linear;
+          -o-animation: 5s shape-animation infinite linear;
+          animation: 5s shape-animation infinite linear;
+
+          @keyframes shape-animation {
+            0% {
+              transform: rotate(10deg);
+            }
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+          @-o-keyframes shape-animation {
+              from { -o-transform: rotate(0deg); }
+              to { -o-transform: rotate(360deg); }
+          }
+          @-moz-keyframes shape-animation {
+              from { -moz-transform: rotate(0deg); }
+              to { -moz-transform: rotate(360deg); }
+          }
+          @-webkit-keyframes shape-animation {
+              from { -webkit-transform: rotate(0deg);
+
+              }
+              to { -webkit-transform: rotate(360deg); 
+
+              }
+          }
+        }
+      }
+    }
+  }
+}
